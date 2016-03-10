@@ -1,7 +1,7 @@
 <p>
 <strong>log4jdbc-log4j2</strong> is a modification of <a
 rel="nofollow" title="External link to log4jdbc"
-href="/web/20160118062235/http://code.google.com/p/log4jdbc/">log4jdbc</a>
+href="http://code.google.com/p/log4jdbc/">log4jdbc</a>
 to natively use Log4j 2 (or SLF4J as usual), that supports JDBC 4.1 to
 JDBC 3, includes all the improvements of log4jdbc-remix, and provides
 new improvements on its own. log4jdbc-log4j2:
@@ -9,15 +9,15 @@ new improvements on its own. log4jdbc-log4j2:
 <ul>
 <li>natively supports <a rel="nofollow"
 title="External link to log4j 2"
-href="/web/20160118062235/http://logging.apache.org/log4j/2.x/">Log4j
+href="http://logging.apache.org/log4j/2.x/">Log4j
 2</a>. <a rel="nofollow" title="External link to SLF4J"
-href="/web/20160118062235/http://www.slf4j.org/">SLF4J</a> can still
+href="http://www.slf4j.org/">SLF4J</a> can still
 be used as usual.
 </li>
 <li>supports JDBC 4.1 (Java 7), JDBC 4 (Java 6), JDBC 3 (Java 5).</li>
 <li>includes all the improvements of <a rel="nofollow"
 title="External link to log4jdbc-remix"
-href="/web/20160118062235/http://code.google.com/p/log4jdbc-remix/">log4jdbc-remix</a>
+href="http://code.google.com/p/log4jdbc-remix/">log4jdbc-remix</a>
 (can log result sets as tables, can be configured as a <tt>Datasource</tt>,
 can use a plugable SQL formatter).
 </li>
@@ -33,15 +33,15 @@ opening execution time, of <tt>getGeneratedKeys()</tt> queries, etc)
 <ul>
 <li><strong>2013-12-12: </strong>Release of log4jdbc-logj2 1.16:
 fixes <a
-href="/web/20160118062235/https://code.google.com/p/log4jdbc-log4j2/issues/detail?id=8"
+href="https://code.google.com/p/log4jdbc-log4j2/issues/detail?id=8"
 class="closed_ref"
 title="log4jdbc.debug.stack.prefix option as REGEX not work for slf4j">&nbsp;issue
 #8&nbsp;</a>, <a
-href="/web/20160118062235/https://code.google.com/p/log4jdbc-log4j2/issues/detail?id=9"
+href="https://code.google.com/p/log4jdbc-log4j2/issues/detail?id=9"
 class="closed_ref"
 title="NullPointerException on empty result set running against Oracle">&nbsp;issue
 #9&nbsp;</a>, and <a
-href="/web/20160118062235/https://code.google.com/p/log4jdbc-log4j2/issues/detail?id=10"
+href="https://code.google.com/p/log4jdbc-log4j2/issues/detail?id=10"
 class="closed_ref" title="Spring @Scheduled method">&nbsp;issue
 #10&nbsp;</a>.</li>
 <p></p>
@@ -56,12 +56,12 @@ log4jdbc-remix).</li>
 bug fixes and improvements from the log4jdbc-remix trunk, notably the
 ability to provide different SQL loggers to different data sources
 (see <a rel="nofollow"
-href="/web/20160118062235/http://code.google.com/p/log4jdbc-remix/issues/detail?id=9">http://code.google.com/p/log4jdbc-remix/issues/detail?id=9</a>).</li>
+href="http://code.google.com/p/log4jdbc-remix/issues/detail?id=9">http://code.google.com/p/log4jdbc-remix/issues/detail?id=9</a>).</li>
 <p></p>
 <p></p>
 <li><strong>2013-06-19: </strong>Release of log4jdbc-logj2 1.13:
 bug fix (see <a
-href="/web/20160118062235/https://code.google.com/p/log4jdbc-log4j2/issues/detail?id=4"
+href="https://code.google.com/p/log4jdbc-log4j2/issues/detail?id=4"
 class="closed_ref"
 title="java.sql.SQLException: Closed Resultset: getMetaData">&nbsp;issue
 #4&nbsp;</a>).</li>
@@ -194,17 +194,17 @@ any unsupported method.</p>
 <p>Choose and download one of the driver .jar files:</p>
 <ul>
 <li><a rel="nofollow" title="Download log4jdbc-log4j2 for JDBC3"
-href="/web/20160118062235/http://log4jdbc-log4j2.googlecode.com/files/log4jdbc-log4j2-jdbc3-1.16.jar">log4jdbc-log4j2-jdbc3.jar</a>
+href="http://log4jdbc-log4j2.googlecode.com/files/log4jdbc-log4j2-jdbc3-1.16.jar">log4jdbc-log4j2-jdbc3.jar</a>
 for JDBC 3 support in JDK 1.5. Please note that starting from version
 <tt>beta5</tt>, Log4j 2 is compiled using JDK 1.6, so that
 log4jdbc-log4j2 for JDBC3 is usable with no later version than Log4j
 2 <tt>beta4</tt>.</li>
 <li><a rel="nofollow" title="Download log4jdbc-log4j2 for JDBC4"
-href="/web/20160118062235/http://log4jdbc-log4j2.googlecode.com/files/log4jdbc-log4j2-jdbc4-1.16.jar">log4jdbc-log4j2-jdbc4.jar</a>
+href="http://log4jdbc-log4j2.googlecode.com/files/log4jdbc-log4j2-jdbc4-1.16.jar">log4jdbc-log4j2-jdbc4.jar</a>
 for JDBC 4 support in JDK 1.6</li>
 <li><a rel="nofollow"
 title="Download log4jdbc-log4j2 for JDBC4.1"
-href="/web/20160118062235/http://log4jdbc-log4j2.googlecode.com/files/log4jdbc-log4j2-jdbc4.1-1.16.jar">log4jdbc-log4j2-jdbc4.1.jar</a>
+href="http://log4jdbc-log4j2.googlecode.com/files/log4jdbc-log4j2-jdbc4.1-1.16.jar">log4jdbc-log4j2-jdbc4.1.jar</a>
 for JDBC 4.1 support in JDK 1.7</li>
 </ul>
 Place the log4jdbc-log4j2 jar that you chose into your application's
@@ -241,10 +241,10 @@ class="tag">&lt;/dependency&gt;</span>
 <p>
 Get the last version of Log4j 2, either from their <a rel="nofollow"
 title="External link to log4j 2"
-href="/web/20160118062235/http://logging.apache.org/log4j/2.0/download.html">download
+href="http://logging.apache.org/log4j/2.0/download.html">download
 page</a>, or from their <a rel="nofollow"
 title="External link to log4j 2"
-href="/web/20160118062235/http://logging.apache.org/log4j/2.x/build.html">Maven
+href="http://logging.apache.org/log4j/2.x/build.html">Maven
 repository</a> (this link contains instructions to configure your
 <tt>pom.xml</tt>
 file).
@@ -269,9 +269,9 @@ is usable with no later version than Log4j 2
 <p>
 Get the last version of SLF4J, either from their <a rel="nofollow"
 title="External link to SLF4J"
-href="/web/20160118062235/http://www.slf4j.org/download.html">download
+href="http://www.slf4j.org/download.html">download
 page</a>, or from their <a rel="nofollow" title="SLF4J Maven repository"
-href="/web/20160118062235/http://mvnrepository.com/artifact/org.slf4j">Maven
+href="http://mvnrepository.com/artifact/org.slf4j">Maven
 repository</a>.
 </p>
 <p></p>
@@ -308,7 +308,7 @@ Set your JDBC driver class to <strong><tt>net.sf.log4jdbc.sql.jdbcapi.DriverSpy<
 in your application (please note that this is not the same class name
 as in the standard log4jdbc implementation). See the <a rel="nofollow"
 title="External link to log4jdbc"
-href="/web/20160118062235/http://code.google.com/p/log4jdbc/">log4jdbc
+href="http://code.google.com/p/log4jdbc/">log4jdbc
 documentation</a> to see the list of supported drivers, or how to add
 support for other drivers. log4jdbc supports almost all major drivers.
 </p>
@@ -335,7 +335,7 @@ This documentation presents some examples (see "Usage" below). Almost
 all features provided by the standard implementations of log4jdbc and
 log4jdbc-remix can be reproduced by using this single logger, thanks
 to the use of <a rel="nofollow"
-href="/web/20160118062235/http://logging.apache.org/log4j/2.0/manual/markers.html">Markers</a>.
+href="http://logging.apache.org/log4j/2.0/manual/markers.html">Markers</a>.
 </p>
 <p>
 This allows a very simple configuration, for instance, at the
@@ -674,7 +674,7 @@ level
 </h2>
 This modified implementation uses
 <a rel="nofollow"
-href="/web/20160118062235/http://logging.apache.org/log4j/2.0/manual/markers.html">Markers</a>,
+href="http://logging.apache.org/log4j/2.0/manual/markers.html">Markers</a>,
 rather than different loggers as in the standard implementation. Here
 is a configuration example at
 <tt>INFO</tt>
@@ -743,7 +743,7 @@ Log4jdbc and log4jdbc-remix uses 6 loggers to log different information
 (see the log4jdbc documentation). This modified implementation rather
 uses
 <a rel="nofollow"
-href="/web/20160118062235/http://logging.apache.org/log4j/2.0/manual/markers.html">Markers</a>
+href="http://logging.apache.org/log4j/2.0/manual/markers.html">Markers</a>
 to achieve the same operations. Here are the configurations to
 reproduce the log4jdbc and log4jdbc-remix loggers behaviors:
 <ul>
@@ -1465,7 +1465,7 @@ is used to acquire the connection to the database, the execution time
 to open the connection is now logged. This is not the case if the
 connection is opened directly in your code as explained in the <a
 rel="nofollow" title="External link to log4jdbc"
-href="/web/20160118062235/http://code.google.com/p/log4jdbc/">log4jdbc
+href="http://code.google.com/p/log4jdbc/">log4jdbc
 FAQ</a>. However, new constructors for <tt>ConnectionSpy</tt> have been
 added, allowing to provide this execution time for logging.</li>
 <li><strong>connection closing</strong>: time to close the
