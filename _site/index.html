@@ -1,11 +1,32 @@
----
-layout: default
-title: Home
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Home</title>
 
-
-
-        <h1>{{ page.title }}</h1>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<meta name="viewport" content="width=device-width">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Log4jdbc-Log4j2</h1>
+<p>JDBC proxy driver for logging SQL and other interesting information.</p>
+<p class="view"><a href="https://github.com/brunorozendo/log4jdbc-log4j2">View the Project on GitHub</a></p>
+<ul>
+<li><a href="/download"><strong>Download</strong></a></li>
+  <!--<li><a href="https://github.com/brunorozendo/log4jdbc-log4j2/zipball/master">Download Project<strong>ZIP File</strong></a></li>
+  <li><a href="https://github.com/brunorozendo/log4jdbc-log4j2/tarball/master">Download Project<strong>TAR Ball</strong></a></li>
+  <li><a href="https://github.com/brunorozendo/log4jdbc-log4j2">Fork On <strong>GitHub</strong></a></li>-->
+</ul>
+      </header>
+      <section>
+                <h1>Home</h1>
 
 <p><strong>log4jdbc-log4j2</strong> is a modification of <a rel="nofollow" title="External link to log4jdbc" href="http://code.google.com/p/log4jdbc/">log4jdbc</a> to natively use Log4j 2 (or SLF4J as usual), that supports JDBC 4.1 to JDBC 3, includes all the improvements of log4jdbc-remix, and provides new improvements on its own. log4jdbc-log4j2:</p>
 <ul>
@@ -110,13 +131,11 @@ pom.xml configuration file, replace
 <code>log4jdbc-log4j2-jdbc4</code> , or
 <code>log4jdbc-log4j2-jdbc3</code> ):</p>
 
-{% highlight xml%}
-<dependency>
-  <groupId>org.bgee.log4jdbc-log4j2</groupId>
-  <artifactId>log4jdbc-log4j2-jdbcXX</artifactId>
-  <version>1.16</version>
-</dependency>
-{% endhighlight %}
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>org.bgee.log4jdbc-log4j2<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>log4jdbc-log4j2-jdbcXX<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;version&gt;</span>1.16<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span></code></pre></figure>
 
 <h2>2. Install the logging library you want to use</h2>
 <h3>2.1. If you want to use Log4j 2 (recommended choice)</h3>
@@ -191,11 +210,9 @@ documentation</a> to see the list of supported drivers, or how to add support fo
   ERROR level:
 </p>
 
-{% highlight xml%}
-<logger name="log4jdbc.log4j2" level="error" additivity="false">
-  <appender-ref ref="Console"/>
-</logger>
-{% endhighlight%}
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;logger</span> <span class="na">name=</span><span class="s">"log4jdbc.log4j2"</span> <span class="na">level=</span><span class="s">"error"</span> <span class="na">additivity=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;appender-ref</span> <span class="na">ref=</span><span class="s">"Console"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/logger&gt;</span></code></pre></figure>
 
 
 <p>And that's it!</p>
@@ -208,12 +225,10 @@ documentation</a> to see the list of supported drivers, or how to add support fo
   DEBUG level is basically:
 </p>
 
-{% highlight xml%}
-<logger name="log4jdbc.log4j2" level="info" additivity="false">
-  <MarkerFilter marker="LOG4JDBC_OTHER" onMatch="DENY" onMismatch="NEUTRAL"/>
-  <appender-ref ref="Console"/>
-</logger>
-{% endhighlight%}
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;logger</span> <span class="na">name=</span><span class="s">"log4jdbc.log4j2"</span> <span class="na">level=</span><span class="s">"info"</span> <span class="na">additivity=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;MarkerFilter</span> <span class="na">marker=</span><span class="s">"LOG4JDBC_OTHER"</span> <span class="na">onMatch=</span><span class="s">"DENY"</span> <span class="na">onMismatch=</span><span class="s">"NEUTRAL"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;appender-ref</span> <span class="na">ref=</span><span class="s">"Console"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/logger&gt;</span></code></pre></figure>
 
 
 <p>Note that if this logger is turned off (or for example, set to a level less than error, such as the FATAL level), then log4jdbc will not log anything and in fact the actual real connection to the underlying database will be returned by the log4jdbc driver (thus allowing log4jdbc to be installed and available to turn on at runtime at a moment's notice without imposing any actual performance loss when not being used).</p>
@@ -1049,3 +1064,13 @@ FAQ</a>. However, new constructors for ConnectionSpy have been added, allowing t
   <li>Maybe use the entry() and exit() methods of Log4j 2, rather than the methodReturned() of the SpyLogDelegator.
   </li>
 </ul>
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="http://github.com/brunorozendo">Bruno Rozendo</a></p>
+
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
