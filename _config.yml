@@ -7,13 +7,13 @@
 title:               Log4jdbc-Log4j2
 tagline:             'Log4jdbc-Log4j2 Driver'
 description:         'JDBC proxy driver for logging SQL and other interesting information.'
-url:                 http://brunorozendo.github.io/log4jdbc-log4j2/
+url:                 http://brunorozendo.com/log4jdbc-log4j2/
 baseurl:             ''
 
 # About/contact
 author:
   name:              Bruno Rozendo
-  url:               http://brunorozendo.com.br
+  url:               http://brunorozendo.com
   email:             bruno@brunorozendo.com.br
 
 # Custom vars

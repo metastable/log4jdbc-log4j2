@@ -2,7 +2,7 @@
 
 body {
   background-color: #fff;
-  padding:50px;
+  
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
@@ -172,7 +172,7 @@ header ul a strong {
 section {
   width:auto;
   float:right;
-  padding-left: 300px;
+  
   padding-bottom:50px;
 }
 
@@ -270,3 +270,27 @@ footer {
     color:#444;
   }
 }
+
+
+
+
+
+#topo { 
+  height:80px;
+  }
+
+#principal {
+  width:900px;
+  float:right;
+  }
+#navegacao {
+  width:180px;
+  float:left;
+  }
+#navegacao * {
+  padding: 0 8px;
+  }
+#rodape { 
+  clear:both;
+  height:20px;
+  }
