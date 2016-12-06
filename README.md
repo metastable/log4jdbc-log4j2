@@ -1,3 +1,8 @@
+#Download
+
+<a title="External link to log4jdbc" href="http://brunorozendo.github.io/log4jdbc-log4j2/">Download</a>
+
+
 <p>
 <strong>log4jdbc-log4j2</strong> is a modification of <a
 rel="nofollow" title="External link to log4jdbc"
