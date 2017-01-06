@@ -1,22 +1,17 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-
-
 # Setup
-title:               Log4jdbc-Log4j2
-tagline:             'Log4jdbc-Log4j2 Driver'
-description:         'JDBC proxy driver for logging SQL and other interesting information.'
-url:                 http://brunorozendo.com/log4jdbc-log4j2/
-baseurl:             ''
+title:        Log4jdbc-log4j2
+tagline:      JDBC proxy driver for logging SQL and other interesting information.
+baseurl:      "/"
+paginate:     1
 
 # About/contact
 author:
-  name:              Bruno Rozendo
-  url:               http://brunorozendo.com
-  email:             bruno@brunorozendo.com.br
+  name:       Bruno Rozendo
+  url:        http://brunorozendo.com
 
-# Custom vars
-version:             1.0.0
+# Gems
+gems:
+  - jekyll-paginate
 
-
+#Others
+markdown: kramdown

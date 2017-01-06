@@ -1,0 +1,18 @@
+<section class="page-header">
+  <h1 class="project-name">{{ site.title }}</h1>
+  <h2 class="project-tagline">{{ site.tagline }}</h2>
+  <nav class="navbar">
+	  <ul>
+	  	<li class="btnMenu {% if page.url == '/' %}active{% endif %}"><a href="/" >Home</a></li>
+	  	<li class="btnMenu {% if page.url == '/download.html' %}active{% endif %}"><a href="/download.html" >Downloads</a></li>
+	  	<li class="btnMenu {% if page.url == '/how-to-use.html' %}active{% endif %}"><a href="/how-to-use.html" >How to use</a></li>
+	  </ul>
+  </nav>
+	<nav class="navbar-collapse">
+	  <select id="select-menu">
+		<option value="/" {% if page.url == '/' %}selected{% endif %}>Home</option>
+		<option value="/download.html" {% if page.url == '/download.html' %}selected{% endif %}>Downloads</option>
+		<option value="/how-to-use.html" {% if page.url == '/how-to-use.html' %}selected{% endif %}>How to use</option>	  	
+	  </select>
+  </nav>  
+</section>

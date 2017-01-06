@@ -1,11 +1,7 @@
 ---
 layout: default
-title: Home
+title: log4jdbc-log4j2
 ---
-
-
-
-<h1>{{ page.title }}</h1>
 
 <p><strong>log4jdbc-log4j2</strong> is a modification of <a rel="nofollow" title="External link to log4jdbc" href="http://code.google.com/p/log4jdbc/">log4jdbc</a> to natively use Log4j 2 (or SLF4J as usual), that supports JDBC 4.1 to JDBC 3, includes all the improvements of log4jdbc-remix, and provides new improvements on its own. log4jdbc-log4j2:</p>
 <ul>
@@ -1049,3 +1045,14 @@ FAQ</a>. However, new constructors for ConnectionSpy have been added, allowing t
   <li>Maybe use the entry() and exit() methods of Log4j 2, rather than the methodReturned() of the SpyLogDelegator.
   </li>
 </ul>
+
+<!--
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+-->

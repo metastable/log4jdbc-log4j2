@@ -1,24 +1,19 @@
-<!doctype html>
-<html>
-  <head>
-    {% include head.html %}
-  </head>
+<!DOCTYPE html>
+<html lang="en-us">
+  
+  {% include head.html %}
+
   <body>
-    <div class="wrapper" id="tudo">
-      <header id="topo">
-        {% include header.html %}
-      </header>
-      <section id="principal">
-        {{ content }}
-      </section>
-      <footer id="navegacao">
-        {% include footer.html %}
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+    {% include page-header.html %}
+
+    <section class="main-content">
+      
+      {{ content }}
+
+      {% include page-footer.html %}
+
+    </section>
+
   </body>
+	{% include footer.html %}  
 </html>
-
-
-
-
