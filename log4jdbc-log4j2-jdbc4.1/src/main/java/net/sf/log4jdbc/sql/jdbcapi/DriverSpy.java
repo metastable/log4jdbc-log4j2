@@ -154,7 +154,7 @@ public class DriverSpy implements Driver
 	 */
 	static
 	{
-		log.debug("DriverSpy intialization...");
+		log.debug("DriverSpy initialization...");
 		
 		// The Set of drivers that the log4jdbc driver will preload at instantiation
 		// time.  The driver can spy on any driver type, it's just a little bit
@@ -231,7 +231,7 @@ public class DriverSpy implements Driver
         rdbmsSpecifics.put("COM.ibm.db2.jdbc.app.DB2Driver", db2);
         rdbmsSpecifics.put("COM.ibm.db2.jdbc.net.DB2Driver", db2);
 
-		log.debug("DriverSpy intialization done.");
+		log.debug("DriverSpy initialization done.");
 	}
 
 	/**
