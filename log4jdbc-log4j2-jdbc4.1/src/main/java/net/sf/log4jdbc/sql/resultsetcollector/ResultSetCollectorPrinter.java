@@ -22,10 +22,10 @@ import java.util.List;
 
 /***
  * @author Tim Azzopardi
- * @author Mathieu Seppey 
- * 
+ * @author Mathieu Seppey
+ *
  * Update : changed printResultSet into getResultSetToPrint
- * 
+ *
  */
 
 public class ResultSetCollectorPrinter {
@@ -46,20 +46,20 @@ public class ResultSetCollectorPrinter {
      * Return a table which represents a <code>ResultSet</code>,
      * to be printed by a logger,
      * based on the content of the provided <code>resultSetCollector</code>.
-     * 
+     *
      * This method will be actually called by a <code>SpyLogDelegator</code>
      * when the <code>next()</code> method of the spied <code>ResultSet</code>
      * return <code>false</code> meaning that its end is reached.
-     * It will be also called if the <code>ResultSet</code> is closed. 
-     * 
-     * 
+     * It will be also called if the <code>ResultSet</code> is closed.
+     *
+     *
      * @param resultSetCollector the ResultSetCollector which has collected the data we want to print
      * @return A <code>String</code> which contains the formatted table to print
-     * 
+     *
      * @see net.sf.log4jdbc.ResultSetSpy
      * @see net.sf.log4jdbc.sql.resultsetcollector.DefaultResultSetCollector
      * @see net.sf.log4jdbc.log.SpyLogDelegator
-     * 
+     *
      */
     public String getResultSetToPrint(ResultSetCollector resultSetCollector) {
 
@@ -69,8 +69,8 @@ public class ResultSetCollectorPrinter {
         int maxLength[] = new int[columnCount];
 
         for (int column = 1; column <= columnCount; column++) {
-            maxLength[column - 1] = resultSetCollector.getColumnName(column)
-                    .length();
+            String columnName = resultSetCollector.getColumnName(column);
+            maxLength[column - 1] = columnName != null ? columnName.length() : 0;
         }
         if (resultSetCollector.getRows() != null) {
             for (List<Object> printRow : resultSetCollector.getRows()) {
@@ -99,9 +99,9 @@ public class ResultSetCollectorPrinter {
         this.table.append(System.getProperty("line.separator"));
         this.table.append("|");
         for (int column = 1; column <= columnCount; column++) {
-            this.table.append(padRight(resultSetCollector.getColumnName(column),
-                    maxLength[column - 1])
-                    + "|");
+            String columnName = resultSetCollector.getColumnName(column);
+            this.table.append(padRight(columnName != null ? columnName : "",
+                maxLength[column - 1]) + "|");
         }
         this.table.append(System.getProperty("line.separator"));
         this.table.append("|");
@@ -133,7 +133,7 @@ public class ResultSetCollectorPrinter {
 
         resultSetCollector.reset();
 
-        return this.table.toString() ;
+        return this.table.toString();
 
     }
 
