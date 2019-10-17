@@ -82,7 +82,7 @@ public class ProxyDataSource implements DataSource {
     }
 
     /**
-     * Set a custom SpyLogDelegator (default is usually Slf4jSpyLogDelegator)
+     * Set a custom SpyLogDelegator (default is usually Log4j2SpyLogDelegator)
      * @param spyLogDelegator
      */
     public void setLogFormatter(SpyLogDelegator spyLogDelegator) {
